@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 
-const Grid = styled.div`
+const Row = styled.div`
   max-width: 80rem;
   margin: 0 auto;
   display: flex;
@@ -10,4 +10,4 @@ const Grid = styled.div`
   align-items: ${props => props.alignItems};
 `;
 
-export default Grid;
+export default Row;

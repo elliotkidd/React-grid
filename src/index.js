@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Grid from "./components/Grid";
+import Row from "./components/Row";
 import Column from "./components/Column";
 import Container from "./components/Container";
 import Box from "./components/Box";
@@ -11,20 +11,20 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <Grid>
+        <Row>
           <Column md={12}>
             <Box>Twelve</Box>
           </Column>
-        </Grid>
-        <Grid>
+        </Row>
+        <Row>
           <Column md={6}>
             <Box>Six</Box>
           </Column>
           <Column md={6}>
             <Box>Six</Box>
           </Column>
-        </Grid>
-        <Grid>
+        </Row>
+        <Row>
           <Column md={4}>
             <Box>Four</Box>
           </Column>
@@ -34,8 +34,8 @@ function App() {
           <Column md={4}>
             <Box>Four</Box>
           </Column>
-        </Grid>
-        <Grid>
+        </Row>
+        <Row>
           <Column md={3}>
             <Box>Three</Box>
           </Column>
@@ -48,8 +48,8 @@ function App() {
           <Column md={3}>
             <Box>Three</Box>
           </Column>
-        </Grid>
-        <Grid>
+        </Row>
+        <Row>
           <Column md={2}>
             <Box>Two</Box>
           </Column>
@@ -68,8 +68,8 @@ function App() {
           <Column md={2}>
             <Box>Two</Box>
           </Column>
-        </Grid>
-        <Grid>
+        </Row>
+        <Row>
           <Column md={1}>
             <Box>One</Box>
           </Column>
@@ -106,7 +106,7 @@ function App() {
           <Column md={1}>
             <Box>One</Box>
           </Column>
-        </Grid>
+        </Row>
       </Container>
     </div>
   );
