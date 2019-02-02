@@ -4,8 +4,8 @@ A set of components for creating responsive layouts in React.
 
 ## Container
 
-'<Container/>'
-'<Container wide/>'
+`<Container/>`
+`<Container wide/>`
 
 ## Grid
 
@@ -14,8 +14,8 @@ A set of components for creating responsive layouts in React.
 
 Styled div with flex attributes passable as props.
 
-eg. 
-'<Grid alignItems="center" justifyContent="center"/>'
+eg.
+`<Grid alignItems="center" justifyContent="center"/>`
 
 ## Column
 
@@ -24,4 +24,4 @@ eg.
 Styled div that takes column span as a prop.
 
 eg.
-'<Column md={6}/>'
+`<Column md={6}/>`
