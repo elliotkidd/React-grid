@@ -2,6 +2,15 @@ body {
   background-color: #f8f8f8;
 }
 
+* {
+  box-sizing: border-box;
+}
+*:before {
+  box-sizing: border-box;
+}
+*:after {
+  box-sizing: border-box;
+}
 .App {
   font-family: sans-serif;
 }

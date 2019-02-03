@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 
 const Row = styled.div`
-  max-width: 80rem;
-  margin: 0 auto;
+  margin: 0 -0.5rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: ${props => props.justifyContent};
   align-items: ${props => props.alignItems};
 `;

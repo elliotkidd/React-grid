@@ -9,8 +9,7 @@ const Box = styled.div`
   margin: 0.5rem 0;
   border-radius: 3px;
   border: 1px solid #efefef;
-  box-shaddow: 0 10px 20px hsla(240, 35, 20, 0.095),
-    0 6px 6px hsla(240, 35, 20, 0.115);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
 `;
 
 export default Box;

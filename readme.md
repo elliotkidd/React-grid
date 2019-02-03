@@ -7,7 +7,7 @@ A set of components for creating responsive layouts in React.
 `<Container/>`
 `<Container wide/>`
 
-## Grid
+## Row
 
 @todo offset prop
 @todo more flex props
@@ -15,7 +15,7 @@ A set of components for creating responsive layouts in React.
 Styled div with flex attributes passable as props.
 
 eg.
-`<Grid alignItems="center" justifyContent="center"/>`
+`<Row alignItems="center" justifyContent="center"/>`
 
 ## Column
 
