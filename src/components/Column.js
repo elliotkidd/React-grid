@@ -18,29 +18,35 @@ const Column = styled.div`
     `}
   
 
-  @media (min-width: 768px) {
-    ${props =>
-      props.md &&
-      css`
+  
+  ${props =>
+    props.md &&
+    css`
+      @media (min-width: 768px) {
         width: ${props => (props.md ? (props.md / 12) * 100 : "100")}%};
-      `}
-  }
+      }
+    `}
 
-  @media (min-width: 992px) {
-    ${props =>
-      props.lg &&
-      css`
+
+
+  ${props =>
+    props.lg &&
+    css`
+      @media (min-width: 992px) {
         width: ${props => (props.lg ? (props.lg / 12) * 100 : "100")}%};
-      `}
-  }
+      }
+    `}
 
-  @media (min-width: 1200px) {
-    ${props =>
-      props.xl &&
-      css`
+
+
+  ${props =>
+    props.xl &&
+    css`
+      @media (min-width: 1200px) {
         width: ${props => (props.xl ? (props.xl / 12) * 100 : "100")}%};
-      `}
-  }
+      }
+    `}
+  
 `;
 
 export default Column;
