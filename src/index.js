@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Row from "./components/Row";
-import Column from "./components/Column";
-import Container from "./components/Container";
-import Section from "./components/Section";
+import { Row, Column, Container, Section } from "./layout/Layout";
 import Box from "./components/Box";
 
 import "./styles.css";
@@ -12,9 +9,9 @@ function App() {
   return (
     <div className="App">
       <Section>
-        <Container>
+        <Container narrow>
           <Row>
-            <Column md={2}>
+            <Column md={12}>
               <Box>Twelve</Box>
             </Column>
           </Row>
@@ -27,13 +24,13 @@ function App() {
             </Column>
           </Row>
           <Row>
-            <Column md={4}>
+            <Column sm={6} md={4}>
               <Box>Four</Box>
             </Column>
-            <Column md={4}>
+            <Column md={4} xs={6}>
               <Box>Four</Box>
             </Column>
-            <Column md={4}>
+            <Column md={4} xs={6}>
               <Box>Four</Box>
             </Column>
           </Row>
@@ -107,6 +104,25 @@ function App() {
             </Column>
             <Column md={1}>
               <Box>One</Box>
+            </Column>
+          </Row>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container narrow>
+          <Row alignItems="center">
+            <Column md={6}>
+              <h2>Tab One</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </Column>
+            <Column md={6}>
+              <Box>
+                <img src="https://source.unsplash.com/random/800x600" />
+              </Box>
             </Column>
           </Row>
         </Container>

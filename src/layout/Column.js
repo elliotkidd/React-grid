@@ -4,10 +4,18 @@ import styled, { css } from "styled-components";
 
 const Column = styled.div`
   position: relative;
-  width: ${props => (props.xs ? (props.xs / 12) * 100 : "100")}%};
+  width: 100%;
   padding: 0 0.5rem;
   width: 100%;
   flex-wrap: wrap;
+
+  ${props =>
+    props.xs &&
+    css`
+      @media (max-width: 575px) {
+        width: ${props => (props.xs ? (props.xs / 12) * 100 : "100")}%};
+      }
+    `}
 
   ${props =>
     props.sm &&
@@ -16,9 +24,7 @@ const Column = styled.div`
         width: ${props => (props.sm ? (props.sm / 12) * 100 : "100")}%};
       }
     `}
-  
 
-  
   ${props =>
     props.md &&
     css`
@@ -27,8 +33,6 @@ const Column = styled.div`
       }
     `}
 
-
-
   ${props =>
     props.lg &&
     css`
@@ -36,8 +40,6 @@ const Column = styled.div`
         width: ${props => (props.lg ? (props.lg / 12) * 100 : "100")}%};
       }
     `}
-
-
 
   ${props =>
     props.xl &&

@@ -4,12 +4,12 @@ A set of components for creating responsive layouts in React.
 
 ## Container
 
-`<Container/>`
-`<Container wide/>`
+`<Container/>`,
+`<Container wide/>` &
+`<Container narrow/>`
 
 ## Row
 
-@todo offset prop
 @todo more flex props
 
 Styled div with flex attributes passable as props.
@@ -19,9 +19,9 @@ eg.
 
 ## Column
 
-@todo create responsive breakpoints as props
+@todo offset prop
 
-Styled div that takes column span as a prop.
+Styled div that takes column span at a breakpoint as a prop.
 
 eg.
-`<Column md={6}/>`
+`<Column lg={3} md={6} />`
