@@ -134,8 +134,8 @@ function App() {
 
       <Section>
         <Container narrow>
-          <Row alignItems="center">
-            <Column md={6}>
+          <Row alignItems="center" justifyContent="space-between">
+            <Column md={5}>
               <h2>Tab One</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
