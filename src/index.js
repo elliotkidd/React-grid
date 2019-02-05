@@ -13,7 +13,20 @@ function App() {
         <Container narrow>
           <Row>
             <Column md={12}>
-              <Button>This is a button</Button>
+              <Button primary>This is a button</Button>
+              <Button secondary>This is a button</Button>
+              <Button tertiary>This is a button</Button>
+            </Column>
+          </Row>
+          </Container>
+      </Section>
+      <Section>
+        <Container narrow>
+          <Row>
+            <Column md={12}>
+              <Button primaryOutline>This is a button</Button>
+              <Button secondaryOutline>This is a button</Button>
+              <Button tertiaryOutline>This is a button</Button>
             </Column>
           </Row>
         </Container>
