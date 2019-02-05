@@ -2,12 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Row, Column, Container, Section } from "./layout/Layout";
 import Box from "./components/Box";
+import Button from "./components/Button";
 
 import "./styles.css";
 
 function App() {
   return (
     <div className="App">
+      <Section>
+        <Container narrow>
+          <Row>
+            <Column md={12}>
+              <Button>This is a button</Button>
+            </Column>
+          </Row>
+        </Container>
+      </Section>
       <Section>
         <Container narrow>
           <Row>
