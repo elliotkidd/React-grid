@@ -4,11 +4,11 @@ import styled, { css } from "styled-components";
 
 const Box = styled.div`
   background: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
-  margin: 0.5rem 0;
-  border-radius: 3px;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  border-radius: 0px;
+  border: 1px solid #efefef;
 `;
 
 export default Box;

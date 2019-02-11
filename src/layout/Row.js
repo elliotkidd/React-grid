@@ -8,6 +8,7 @@ const Row = styled.div`
   flex-wrap: wrap;
   justify-content: ${props => props.justifyContent};
   align-items: ${props => props.alignItems};
+  text-align: ${props => props.textAlign};
 `;
 
 export default Row;

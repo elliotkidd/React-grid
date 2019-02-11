@@ -10,6 +10,7 @@ const Button = styled.button`
   text-align: center;
   border-radius: 3px;
   font-size: 0.875rem;
+  font-weight: 700;
   line-height: calc(1rem * 2.4);
   transition: 200ms;
   text-align: center;
@@ -26,6 +27,13 @@ const Button = styled.button`
   &:focus {
     outline: 0;
   }
+
+  ${props =>
+    props.block &&
+    css`
+      display: block;
+      width: 100%;
+    `}
 
   ${props =>
     props.primary &&
@@ -84,21 +92,43 @@ const Button = styled.button`
         border: 1px solid #2c9bad;
       }
       &:focus {
-        box-shadow: 0 0 0 0.2rem rgba(#37c2d9, 0.25); 
+        box-shadow: 0 0 0 0.2rem rgba(#37c2d9, 0.25);
       }
-      `} 
-    ${props =>
-      props.tertiaryOutline &&
-      css`
-        background-color: transparent;
-        color: #37c2d9;
-        border: 1px solid #37c2d9;
-        &:hover {
-          background-color: #2c9bad;
-          color: #fff;
-          border: 1px solid #2c9bad;
-        }
-      `}     
+    `} 
+  ${props =>
+    props.tertiaryOutline &&
+    css`
+      background-color: transparent;
+      color: #37c2d9;
+      border: 1px solid #37c2d9;
+      &:hover {
+        background-color: #2c9bad;
+        color: #fff;
+        border: 1px solid #2c9bad;
+      }
+    `}
+  ${props =>
+    props.dark &&
+    css`
+      background-color: #000d47;
+      border: 1px solid #000d47;
+      &:hover {
+        background-color: #00082e;
+        border: 1px solid #00082e;
+      }
+    `} 
+  ${props =>
+    props.darkOutline &&
+    css`
+      background-color: transparent;
+      color: #000d47;
+      border: 1px solid #000d47;
+      &:hover {
+        background-color: #00082e;
+        color: #fff;
+        border: 1px solid #00082e;
+      }
+    `}        
 
   ${props =>
     props.sm &&
@@ -107,11 +137,11 @@ const Button = styled.button`
       line-height: calc(1rem * 1.75);
     `}
     ${props =>
-    props.lg &&
-    css`
-      padding: 0 1.25rem;
-      line-height: calc(1rem * 3.25);
-    `}
+      props.lg &&
+      css`
+        padding: 0 1.25rem;
+        line-height: calc(1rem * 3.25);
+      `}
 
     
 `;

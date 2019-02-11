@@ -8,11 +8,12 @@ const Column = styled.div`
   padding: 0 0.5rem;
   width: 100%;
   flex-wrap: wrap;
+  text-align: ${props => props.textAlign};
 
   ${props =>
     props.xs &&
     css`
-      @media (max-width: 575px) {
+      @media (min-width: 0px) {
         width: ${props => (props.xs ? (props.xs / 12) * 100 : "100")}%};
       }
     `}

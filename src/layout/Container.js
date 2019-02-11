@@ -16,7 +16,7 @@ const Container = styled.div`
   ${props =>
     props.narrow &&
     css`
-      max-width: 940px;
+      max-width: 70rem;
     `}
   
   }
